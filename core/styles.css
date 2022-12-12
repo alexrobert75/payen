@@ -37,6 +37,7 @@ header {
     align-items: center;
     text-align: center;
     z-index: 8;
+    height: 100vh;
 }
 
 #burgersign {
@@ -139,6 +140,7 @@ nav a:focus::after {
 main {
     width: 75%;
     margin-left: 25%;
+    height: 100vh;
 }
 
 h1 {
