@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFAFA;
+    max-height: 100vh;
+
 }
 
 ::-webkit-scrollbar {
@@ -162,11 +164,12 @@ h2 {
 }
 
 .button{
-    margin-top: 3rem;
+    margin: 3rem 0.2rem;
     display: inline-block;
     padding: 0.3rem 1rem;
     background-color: #262626;
     transition: background-color 0.4s;
+    text-align: center;
 }
 
 .button:hover{
@@ -734,7 +737,7 @@ a.linkS:hover {
         margin-top: 3rem;
     }
     header {
-        width: 35%;
+        width: 40%;
         transform: scaleX(0);
         transition: transform 0.4s;
         transform-origin: center left;
@@ -750,8 +753,8 @@ a.linkS:hover {
        transform-origin: center left;
     }
     .reveal2 {
-        width: 65%;
-        margin-left: 35%;
+        width: 60%;
+        margin-left: 40%;
         transition: all 0.4s;
     }
     .overlay p {
