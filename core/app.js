@@ -39,6 +39,8 @@ document.body.onload = function () { changeD(pic1), clearD(minipic1) };
 
 // Vignettes caroussel
 
+let i=0;
+
 minipic1.addEventListener("click", () => {
     changeD(pic1);
     removeD(pic2);
@@ -46,8 +48,10 @@ minipic1.addEventListener("click", () => {
     clearD(minipic1);
     blackD(minipic2);
     blackD(minipic3);
+    i = 0;
 });
 minipic2.addEventListener("click", () => {
+    i = 1;
     changeD(pic2);
     removeD(pic1);
     removeD(pic3);
@@ -57,6 +61,7 @@ minipic2.addEventListener("click", () => {
 
 });
 minipic3.addEventListener("click", () => {
+    i = 2;
     changeD(pic3);
     removeD(pic1);
     removeD(pic2);
@@ -68,8 +73,7 @@ minipic3.addEventListener("click", () => {
 
 // Flèces précédentes/suivantes
 
-let i = 0;
-let imgList = [pic1, pic2, pic3];
+
 next.addEventListener("click", () => {
     if (i === 0) {
         changeD(pic2);
