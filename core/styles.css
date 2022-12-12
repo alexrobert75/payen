@@ -786,7 +786,7 @@ a.linkS:hover {
     }
     .button {
         display: block;
-        margin-top: 0.3rem;
+        margin: 0.3rem 0;
     }
 }
 
