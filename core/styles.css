@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFAFA;
     max-height: 100vh;
@@ -759,6 +760,9 @@ a.linkS:hover {
         margin-left: 40%;
         transition: all 0.4s;
     }
+    .overlay {
+        align-items: center;
+    }
     .overlay p {
         font-size: 0.9rem;
     }
@@ -775,8 +779,9 @@ a.linkS:hover {
         text-align: center;
     }
     .mosaique {
-        margin: 3rem auto;
+        margin: 0 auto;
         width: 90%;
+        padding: 3rem 0;
     }
     #caroussel {
         width: 90%;
