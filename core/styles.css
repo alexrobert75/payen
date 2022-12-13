@@ -139,8 +139,7 @@ nav a:focus::after {
 }
 
 main {
-    width: 75%;
-    margin-left: 25%;
+    margin-left: 22%;
     height: 100vh;
 }
 
@@ -683,7 +682,9 @@ a.linkS:hover {
     header {
         width: 25%;
     }
-
+    main {
+        margin-left: 25%;
+    }
     .sidecontainer {
         flex-direction: column;
         align-items: center;
@@ -699,8 +700,8 @@ a.linkS:hover {
     }
     .sidephoto figcaption {
         width: 82%;
+        text-align: center;
     }
-    
     #caroussel img {
         width: 100%;
     }
