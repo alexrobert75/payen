@@ -1,29 +1,41 @@
+/* Style global */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFAFA;
     max-height: 100vh;
-
 }
+
+.hidden {
+    opacity: 0;
+}
+
+
+/* Scrollbar */
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
+}
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888;
 }
+
+
+/* Mise en page générale */
 
 .flexcontainer {
     height: 100vh;
 }
+
+
+/* Barre de navigation */
 
 header {
     position: fixed;
@@ -39,35 +51,6 @@ header {
     text-align: center;
     z-index: 8;
     height: 100vh;
-}
-
-#burgersign {
-    display: none;
-    width: 2rem;
-    height: 4px;
-    background-color: black;
-    position: fixed;
-    left: 0;
-    margin: 1.5rem 1rem;
-    z-index: 10;
-}
-
-#burgersign::before,#burgersign::after {
-    content: "";
-    width: 2rem;
-    height: 4px;
-    background-color: black;
-    display: inline-block;
-    position: absolute;
-
-}
-
-#burgersign::before{
-    top: 10px;
-}
-
-#burgersign::after{
-    top: -10px;
 }
 
 .logo {
@@ -138,6 +121,41 @@ nav a:focus::after {
     transition: all 800ms;
 }
 
+
+/* Nav mobile */
+
+#burgersign {
+    display: none;
+    width: 2rem;
+    height: 4px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    margin: 1.5rem 1rem;
+    z-index: 10;
+}
+
+#burgersign::before,#burgersign::after {
+    content: "";
+    width: 2rem;
+    height: 4px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+
+}
+
+#burgersign::before{
+    top: 10px;
+}
+
+#burgersign::after{
+    top: -10px;
+}
+
+
+/* Contenu principal */
+
 main {
     margin-left: 22%;
     height: 100vh;
@@ -155,36 +173,40 @@ h2 {
     margin: 0;
 }
 
-.statuename {
-    font-size: 2.4rem;
-    margin-bottom: 1.3rem;
-}
-
-.buttonsgroup {
-    width: 90%;
+.sidecontainer {
     display: flex;
+    width: 100%;
+    font-style: italic;
+    font-size: 0.9em;
 }
 
-.button{
-    margin: 3rem 0.2rem;
-    display: inline-block;
-    padding: 0.3rem 1rem;
-    background-color: #262626;
-    transition: background-color 0.4s;
-    text-align: center;
+.sidephoto {
+    flex: 1;
+    margin: 3rem 1rem;
+    animation: fadeInLeft 1.5s;
+    -webkit-animation: fadeInLeft 1s;
 }
 
-.button:hover{
-    background-color: rgb(100, 100, 100);
-    transition: background-color 0.4s;
+.sidephoto img {
+    max-width: 100%;
 }
 
-.button a{
-    color: white;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 100;
+.sidephoto figcaption {
+    margin-bottom: 1rem;
 }
+
+.sidetext {
+    flex: 1;
+    margin: 3rem 3rem 3rem 1rem;
+    line-height: 1.6;
+    animation: fadeInLeft 2s;
+    -webkit-animation: fadeInLeft 1.2s;
+    position: relative;
+    width: 100%;
+}
+
+
+/* Home / Atelier */
 
 .workshop {
     background-image: url("../assets/img/ACCUEIL.jpg");
@@ -219,18 +241,40 @@ h2 {
     animation: fadeInUp  0.5s;
 }
 
-.sidecontainer {
-    display: flex;
-    width: 100%;
-    font-style: italic;
-    font-size: 0.9em;
+
+
+/* Page oeuvre */
+
+
+.statuename {
+    font-size: 2.4rem;
+    margin-bottom: 1.3rem;
 }
 
-.sidephoto {
-    flex: 1;
-    margin: 3rem 1rem;
-    animation: fadeInLeft 1.5s;
-    -webkit-animation: fadeInLeft 1s;
+.buttonsgroup {
+    width: 90%;
+    display: flex;
+}
+
+.button{
+    margin: 3rem 0.2rem;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background-color: #262626;
+    transition: background-color 0.4s;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgb(100, 100, 100);
+    transition: background-color 0.4s;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
 }
 
 #sidecar {
@@ -238,24 +282,6 @@ h2 {
     display: flex;
     justify-content: center;
     color: #262626;
-}
-
-.sidephoto img {
-    max-width: 100%;
-}
-
-.sidephoto figcaption {
-    margin-bottom: 1rem;
-}
-
-.sidetext {
-    flex: 1;
-    margin: 3rem 3rem 3rem 1rem;
-    line-height: 1.6;
-    animation: fadeInLeft 2s;
-    -webkit-animation: fadeInLeft 1.2s;
-    position: relative;
-    width: 100%;
 }
 
 #sculptext {
@@ -279,9 +305,140 @@ color: #262626;
 letter-spacing: 1.5;
 }
 
-.hidden {
-    opacity: 0;
+
+/* Caroussel d'images */
+
+#caroussel  {
+    width: 83%;
+    margin: 0;
+    max-height: 96vh;
 }
+
+.relativeP {
+    position: relative;
+}
+
+.mainpic {
+    width: 100%;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    display: flex;
+}
+
+.bigpic {
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.showimg {
+    display: flex;
+}
+
+.tpic {
+    filter: grayscale(80%);
+}
+
+.tpic:hover{
+    filter: none;
+}
+
+.clear{
+    filter:none;
+}
+
+.fleche {
+    font-style: normal;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem; 
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    width: 1.2rem;
+    font-weight: bold; 
+    z-index: 10;
+    text-align: center;
+}
+
+.bigfleche {
+    font-size: 4rem;
+    top: 40%;
+    width: 4.2rem;
+}
+
+#prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+#next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+#prev:hover,#next:hover{
+    background-color: rgba(0,0,0,0.7);
+    transition: background-color 0.3s;
+}
+
+
+
+/* Image plein écran */
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100wh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .bigpic {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal .bigpic img {
+    max-height: 90%;
+    max-width: 90vw;
+    animation: fade 0.3s;
+    -webkit-animation: fade 0.3s;
+}
+  
+.close {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Page présentation des sculptures */
+
 
 .mosaique {
     margin-top: 3rem;
@@ -389,8 +546,6 @@ letter-spacing: 1.5;
     animation-delay: 3.8s;
 }
 
-
-
 a.linkS {
     position: absolute;
     height: 110%;
@@ -419,113 +574,10 @@ a.linkS:hover {
     transition: all 0.2s;
 }
 
-#caroussel  {
-    width: 83%;
-    margin: 0;
 
-}
 
-.relativeP {
-    position: relative;
-}
+/* Animations */
 
-.mainpic {
-    width: 100%;
-    position: relative;
-}
-
-.thumbnail {
-    width: 100%;
-    display: flex;
-}
-
-.bigpic {
-    display: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.showimg {
-    display: flex;
-}
-
-.tpic {
-    filter: grayscale(80%);
-}
-
-.tpic:hover{
-    filter: none;
-}
-
-.clear{
-    filter:none;
-}
-
-.fleche {
-    font-style: normal;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem; 
-    position: absolute;
-    top: 30%;
-    cursor: pointer;
-    width: 1.2rem;
-    font-weight: bold; 
-    z-index: 10;
-    text-align: center;
-}
-
-.bigfleche {
-    font-size: 4rem;
-    top: 40%;
-    width: 4.2rem;
-}
-
-#prev {
-    left: 0;
-    border-radius: 0 10px 10px 0;
-}
-
-#next {
-    right: 0;
-    border-radius: 10px 0 0 10px;
-}
-
-#prev:hover,#next:hover{
-    background-color: rgba(0,0,0,0.7);
-    transition: background-color 0.3s;
-}
-
-/* Modal image */
-
-.modal {
-    display: flex;
-    position: fixed;
-    z-index: 8;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100wh;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.9);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal .bigpic {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.modal .bigpic img {
-    max-height: 90%;
-    max-width: 90vw;
-    animation: fade 0.3s;
-    -webkit-animation: fade 0.3s;
-}
-  
 @keyframes fade {
     from {
         opacity: 0;
@@ -540,30 +592,6 @@ a.linkS:hover {
     to {
     opacity: 1;}
 }
-
-.close {
-    display: none;
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-
-/* Animations */
 
 @-webkit-keyframes fadeInUp {
     from {
@@ -670,6 +698,8 @@ a.linkS:hover {
 }
 
 
+/* Responsive */
+
 
 @media all and (max-width: 1325px) {
     .sculpture {
@@ -749,6 +779,10 @@ a.linkS:hover {
         width: 46%;
         padding-top: 46%;
     }
+    .bigfleche {
+        font-size: 2rem;
+        width: 2.2rem;
+    }
 
 }
 
@@ -827,5 +861,4 @@ a.linkS:hover {
         width: 40%;
         padding-top: 45%;
     }
-
 }

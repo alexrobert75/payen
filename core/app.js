@@ -71,7 +71,7 @@ minipic3.addEventListener("click", () => {
 });
 
 
-// Flèces précédentes/suivantes
+// Flèches précédentes/suivantes
 
 
 next.addEventListener("click", () => {
