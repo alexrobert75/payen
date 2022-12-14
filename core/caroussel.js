@@ -1,24 +1,24 @@
 // Caroussel
 
-const pic1 = document.getElementById('bigpicture1');
-const pic2 = document.getElementById('bigpicture2');
-const pic3 = document.getElementById('bigpicture3');
-const previous = document.getElementById('prev');
-const next = document.getElementById('next');
-const minipic1 = document.getElementById('pic1');
-const minipic2 = document.getElementById('pic2');
-const minipic3 = document.getElementById('pic3');
+var pic1 = document.getElementById('bigpicture1');
+var pic2 = document.getElementById('bigpicture2');
+var pic3 = document.getElementById('bigpicture3');
+var previous = document.getElementById('prev');
+var next = document.getElementById('next');
+var minipic1 = document.getElementById('pic1');
+var minipic2 = document.getElementById('pic2');
+var minipic3 = document.getElementById('pic3');
 
-const changeD = (elem) => {
+var changeD = function(elem){
     elem.classList = "bigpic showimg";
 }
-const removeD = (elem) => {
+var removeD = function(elem){
     elem.classList = "bigpic";
 }
-const clearD = (elem) => {
+var clearD = function(elem){
     elem.classList = "tpic clear";
 }
-const blackD = (elem) => {
+var blackD = function(elem){
     elem.classList = "tpic";
 }
 
@@ -27,9 +27,9 @@ document.body.onload = function () { changeD(pic1), clearD(minipic1), changeS(sl
 
 // Vignettes caroussel
 
-let i=0;
+var i=0;
 
-minipic1.addEventListener("click", () => {
+minipic1.addEventListener("click", function() {
     changeD(pic1);
     removeD(pic2);
     removeD(pic3);
@@ -38,7 +38,7 @@ minipic1.addEventListener("click", () => {
     blackD(minipic3);
     i = 0;
 });
-minipic2.addEventListener("click", () => {
+minipic2.addEventListener("click", function() {
     i = 1;
     changeD(pic2);
     removeD(pic1);
@@ -48,7 +48,7 @@ minipic2.addEventListener("click", () => {
     blackD(minipic3);
 
 });
-minipic3.addEventListener("click", () => {
+minipic3.addEventListener("click", function() {
     i = 2;
     changeD(pic3);
     removeD(pic1);
@@ -62,7 +62,7 @@ minipic3.addEventListener("click", () => {
 // Flèches précédentes/suivantes
 
 
-next.addEventListener("click", () => {
+next.addEventListener("click", function() {
     if (i === 0) {
         changeD(pic2);
         removeD(pic1);
@@ -83,7 +83,7 @@ next.addEventListener("click", () => {
         i = 0;
     }
 });
-previous.addEventListener("click", () => {
+previous.addEventListener("click", function() {
     if (i === 0) {
         changeD(pic3);
         removeD(pic1);
@@ -118,10 +118,10 @@ document.body.addEventListener("keydown", function (event) {
 
 // Image en plein écran
 
-const picB = document.getElementById("mainP");
-const modal = document.querySelector(".modal");
-const span = document.getElementById("closed");
-const caroussel = document.getElementById("caroussel");
+var picB = document.getElementById("mainP");
+var modal = document.querySelector(".modal");
+var span = document.getElementById("closed");
+var caroussel = document.getElementById("caroussel");
 
 picB.onclick = function () {
     picB.classList.toggle("modal");

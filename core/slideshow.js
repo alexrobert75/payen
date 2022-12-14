@@ -1,9 +1,9 @@
 // Slideshow contact
 
-const slide1 = document.getElementById("slide1");
-const slide2 = document.getElementById("slide2");
+var slide1 = document.getElementById("slide1");
+var slide2 = document.getElementById("slide2");
 
-const changeS = (elem1) => {
+var changeS = function(elem1) {
     elem1.classList.toggle("slidepic2");
 }
 

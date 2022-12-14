@@ -1,8 +1,8 @@
 // Menu mobile
 
-const burger = document.getElementById("burgersign");
-const barre = document.querySelector("header");
-const maincontent = document.querySelector("main");
+var burger = document.getElementById("burgersign");
+var barre = document.querySelector("header");
+var maincontent = document.querySelector("main");
 
 burger.addEventListener("click", function () {
     barre.classList.toggle("reveal1");
