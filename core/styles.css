@@ -311,7 +311,6 @@ letter-spacing: 1.5;
 #caroussel  {
     width: 83%;
     margin: 0;
-    max-height: 96vh;
 }
 
 .relativeP {
@@ -396,7 +395,7 @@ letter-spacing: 1.5;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100wh;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(0,0,0,0.9);
     justify-content: center;
