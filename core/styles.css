@@ -189,7 +189,14 @@ h2 {
 
 .sidephoto img {
     width: 100%;
+}
+
+.sidephotoimg1 img {
     height: 100%;
+}
+
+.sidephotoimg2 img{
+    height: auto;
 }
 
 .sidephoto figcaption {
