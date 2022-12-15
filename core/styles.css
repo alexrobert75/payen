@@ -416,6 +416,7 @@ letter-spacing: 1.5;
     animation: fade 0.3s;
     -webkit-animation: fade 0.3s;
     height: auto;
+    width: auto;
 }
   
 .close {
