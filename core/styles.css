@@ -338,6 +338,10 @@ letter-spacing: 1.5;
     display: flex;
 }
 
+.showimg img{
+    height: auto;
+}
+
 .tpic {
     filter: grayscale(80%);
 }
