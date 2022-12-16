@@ -600,7 +600,20 @@ a.linkS:hover {
 }
 
 
-/* Contact slideshow */
+/* Contact bloc 2 photos */
+
+.photos2cote {
+    display: flex;
+    justify-content: center;
+}
+
+.photos2cote img {
+    width: 48%;
+    margin: 1%;
+}
+
+
+/* Contact slideshow 
 
 .slideshow {
     position: relative;
@@ -648,7 +661,7 @@ a.linkS:hover {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 /* Animations */
 
@@ -836,6 +849,10 @@ a.linkS:hover {
         position: relative;
         display: inline-block;
         margin: 0 auto;
+    }
+
+    .photos2cote {
+        width: 50%;
     }
 }
 
