@@ -124,6 +124,17 @@ nav a:focus::after {
 
 /* Nav mobile */
 
+.burgerbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    border-radius: 0 0 3px 0;
+}
+
 #burgersign {
     display: none;
     width: 2rem;
