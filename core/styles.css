@@ -624,6 +624,13 @@ a.linkS:hover {
 }
 
 
+/* Légendes sur deux lignes en mobile */
+
+.figmobile {
+    display: none;
+}
+
+
 /* Contact slideshow 
 
 .slideshow {
@@ -829,6 +836,12 @@ a.linkS:hover {
     .sidephoto figcaption {
         width: 82%;
         text-align: center;
+    }
+    .figmobile {
+        display: inline-block;
+    }
+    .figdesktop {
+        display: none;
     }
     #caroussel img {
         width: 100%;
