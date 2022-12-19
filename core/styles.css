@@ -243,7 +243,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items:flex-end;
-
 }
 
 .overlay p {
@@ -256,8 +255,9 @@ h2 {
     text-align: center;
     padding: 1rem;
     margin-bottom: 2rem;
-    -webkit-animation: fadeInUp 0.5s;
-    animation: fadeInUp  0.5s;
+    opacity: 0;
+    -webkit-animation: fadeInUp 0.5s forwards;
+    animation: fadeInUp  0.8s forwards;
 }
 
 
@@ -946,6 +946,7 @@ a.linkS:hover {
     }
     .overlay p {
         font-size: 0.9rem;
+        animation-delay: 1s;
     }
     .sidephoto {
         width: 80%;
