@@ -65,8 +65,8 @@ header {
 
 .logo,nav,.fadec {
     opacity: 0;
-    animation: fade 1s forwards;
-    -webkit-animation: fade 1s forwards;
+    animation: fade 0.8s forwards;
+    -webkit-animation: fade 0.8s forwards;
 }
 
 header a{
@@ -196,8 +196,8 @@ h2 {
 .sidephoto {
     flex: 1;
     margin: 3rem 1rem;
-    animation: fadeInLeft 1.5s;
-    -webkit-animation: fadeInLeft 1.5s;
+    animation: fadeInLeft 1.2s;
+    -webkit-animation: fadeInLeft 1.2s;
 }
 
 .sidephoto img {
@@ -220,8 +220,8 @@ h2 {
     flex: 1;
     margin: 3rem 3rem 3rem 1rem;
     line-height: 1.6;
-    animation: fadeInLeft 2s;
-    -webkit-animation: fadeInLeft 2s;
+    animation: fadeInLeft 1.6s;
+    -webkit-animation: fadeInLeft 1.6s;
     position: relative;
     width: 100%;
 }
