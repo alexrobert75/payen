@@ -946,6 +946,7 @@ a.linkS:hover {
         font-size: 0.9rem;
         margin-bottom: 6rem;
         animation-delay: 1s;
+        -webkit-animation-delay: 1s;
     }
     .sidephoto {
         width: 80%;
