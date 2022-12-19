@@ -941,11 +941,10 @@ a.linkS:hover {
         margin-left: 40%;
         transition: all 0.4s;
     }
-    .overlay {
-        align-items: center;
-    }
+
     .overlay p {
         font-size: 0.9rem;
+        margin-bottom: 6rem;
         animation-delay: 1s;
     }
     .sidephoto {
