@@ -134,6 +134,7 @@ nav a:focus::after {
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 10;
     border-radius: 0 0 3px 0;
+    display: none;
 }
 
 #burgersign {
@@ -928,6 +929,9 @@ a.linkS:hover {
 }
 
 @media all and (max-width: 760px) {
+    .burgerbar {
+        display: block;
+    }
     .statuename {
         font-size: 1.8rem;
     }
