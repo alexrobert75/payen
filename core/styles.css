@@ -986,6 +986,14 @@ a.linkS:hover {
         width: 90%;
         padding: 3rem 0;
     }
+    a.linkS {
+        background-color: transparent;
+        opacity: 1;
+        color: white;
+        font-size: 0.6rem;
+        -webkit-transform: none;
+        transform: none;
+    }
     #caroussel {
         width: 90%;
     }
